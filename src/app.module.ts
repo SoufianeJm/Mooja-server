@@ -31,8 +31,8 @@ import { validateEnvironment, validateProductionEnvironment } from './config/env
           throttlers: [
             {
               name: 'default',
-              ttl: parseInt(configService.get('RATE_LIMIT_WINDOW_MS'), 10),
-              limit: parseInt(configService.get('RATE_LIMIT_MAX_REQUESTS'), 10),
+              ttl: parseInt(configService.get('RATE_LIMIT_WINDOW_MS') || '900000', 10),
+              limit: parseInt(configService.get('RATE_LIMIT_MAX_REQUESTS') || '100', 10),
             },
           ],
         }),
