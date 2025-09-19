@@ -9,6 +9,7 @@
     "seed": "ts-node prisma/seed.ts"
   },
   "scripts": {
+    "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
@@ -56,6 +57,7 @@
   },
   "devDependencies": {
     "@nestjs/cli": "^11.0.10",
+    "rimraf": "^5.0.0",
     "@nestjs/schematics": "^11.0.7",
     "@nestjs/testing": "^11.1.6",
     "@types/bcrypt": "^6.0.0",
