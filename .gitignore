@@ -4,6 +4,7 @@
 DEPLOYMENT.md
 *.exe
 *.bat
+RAILWAY_DEPLOYMENT.md
 
 # Logs
 logs
